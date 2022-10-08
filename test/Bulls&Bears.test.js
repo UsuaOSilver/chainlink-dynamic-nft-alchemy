@@ -7,7 +7,7 @@ let TOKEN_ID_0, TOKEN_ID_1;
 
 before(async () => {
   [deployer, owner1] = await ethers.getSigners();
-  Token = await ethers.getContractFactory("BullBear");
+  Token = await ethers.getContractFactory("BullAndBear");
   tokenContract = await Token.deploy();
   TOKEN_ID_0 = 0;
   TOKEN_ID_1 = 1;
